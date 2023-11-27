@@ -1,0 +1,221 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": 
+                "string"
+            
+        },
+        "token": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "status": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "created": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "originalAmount": {
+            "type": "object",
+            "properties": {
+                "amount": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "currency": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "openToCaptureAmount": {
+            "type": "object",
+            "properties": {
+                "amount": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "currency": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "paymentState": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "merchantReference": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "refunds": {
+            "type": "array",
+            "properties": {
+                "requestId": {
+                    "type": ["null","string"]
+                },
+                "amount": {
+                    "type": "object",
+                    "properties": {
+                        "amount": {
+                            "type": ["null","string"]
+                        },
+                        "currency": {
+                            "type": ["null","string"]
+                        }
+                    }
+                },
+                "merchantReference": {
+                    "type": ["null","string"]
+                },
+                "refundId": {
+                    "type": ["null","string"]
+                },
+                "refundedAt": {
+                    "type": ["null","string"]
+                },
+                "refundMerchantReference": {
+                    "type": ["null","string"]
+                }
+            }
+        },
+        "orderDetails": {
+          "type": "object",
+          "properties": {
+            "consumer": {
+              "type": "object",
+              "properties": {
+                "phoneNumber": {
+                  "type": "string"
+                },
+                "givenNames": {
+                  "type": "string"
+                },
+                "surname": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            },
+            "billing": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "line2": {
+                  "type": "string"
+                },
+                "area1": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": "string"
+                },
+                "postcode": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                }
+              }
+            },
+            "shipping": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "line2": {
+                  "type": "string"
+                },
+                "area1": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": "string"
+                },
+                "postcode": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                }
+              }
+            },
+            "courier": {
+              "type": "object"
+            },
+            "items": {
+              "type": "array",
+              "items": {}
+            },
+            "discounts": {
+              "type": "array",
+              "items": {}
+            }
+          }
+        },
+        "events": {
+            "type": "array",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "created": {
+                "type": "string"
+              },
+              "expires": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "string"
+                  },
+                  "currency": {
+                    "type": "string"
+                  }
+                }
+              },
+              "paymentEventMerchantReference": {
+                "type": "null"
+              }
+            }
+          }
+    }
+}
